@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240414230519">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240415194039">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,206 @@
 			</div>
 		</header>
 		<main class="page">
+			<article class="faq">
+				<div class="faq__container">
+					<div class="faq__title-wr title-wr">
+						<h1 class="faq__title title">Frequently Asked Questions (FAQ)</h1>
+						<nav class="faq__navigation">
+							<a href="#" data-goto-header data-goto=".user-faq" class="faq__link">User FAQ &crarr;</a>
+							<a href="#" data-goto-header data-goto=".developer-faq" class="faq__link">Developer FAQ &crarr;</a>
+						</nav>
+					</div>
 
+					<div class="faq__user user-faq">
+						<h2 class="user-faq__title">User FAQ</h2>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Can I use 7-Zip in a commercial organization?</h3>
+								<div class="user-faq__answer text">
+									<p>Yes, 7-Zip is free software. You can use it on any computer. You don't need to register or pay for 7-Zip.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">How can I set file associations to 7-Zip in Windows 7 and Windows Vista?</h3>
+								<div class="user-faq__answer text">
+									<p>You must run 7-Zip File Manager in administrator mode. Right-click the icon of 7-Zip File Manager, and then click Run as administrator. Then you can change file associations and some other options.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why 7z archives created by new version of 7-Zip can be larger than archives created by old version of 7-Zip?</h3>
+								<div class="user-faq__answer text">
+									<p>New versions of 7-Zip (starting from version 15.06) use another file sorting order by default for solid 7z archives.</p>
+									<p>Old version of 7-Zip (before version 15.06) used file sorting "by type" ("by extension").</p>
+									<p>New version of 7-Zip supports two sorting orders:</p>
+									<ul class="user-faq__list list">
+										<li class="user-faq__item item">sorting by name - default order.</li>
+										<li class="user-faq__item item">sorting by type, if 'qs' is specified in Parameters field in "Add to archive" window, (or -mqs switch for command line version).</li>
+									</ul>
+									<p>You can get big difference in compression ratio for different sorting methods, if dictionary size is smaller than total size of files. If there are similar files in different folders, the sorting "by type" can provide better compression ratio in some cases.</p>
+									<p>Note that sorting "by type" has some drawbacks. For example, NTFS volumes use sorting order "by name", so if an archive uses another sorting, then the speed of some operations for files with unusual order can fall on HDD devices (HDDs have low speed for "seek" operations).</p>
+									<p>You can increase compression ratio with the following methods:</p>
+									<ul class="user-faq__list list">
+										<li class="user-faq__item item">Specify 'qs' in Parameters field (or use -mqs switch for command line version).</li>
+										<li class="user-faq__item item">Increase dictionary size. It can help when 'qs' is not used.</li>
+									</ul>
+									<p>If you think that unusual file order is not problem for you, and if better compression ratio with small dictionary is more important for you, use 'qs' mode.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why can't 7-Zip open some ZIP archives?</h3>
+								<div class="user-faq__answer text">
+									<p>In 99% of these cases it means that the archive contains incorrect headers. Other ZIP programs can open some archives with incorrect headers, since these programs just ignore errors.</p>
+									<p>If you have such archive, please don't call the 7-Zip developers about it. Instead try to find the program that was used to create the archive and inform the developers of that program that their software is not ZIP-compatible.</p>
+									<p>There are also some ZIP archives that were encoded with methods unsupported by 7-Zip, for example, WAVPack (WinZip).</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why can't 7-Zip open some RAR archives?</h3>
+								<div class="user-faq__answer text">
+									<p>7-Zip 9.20 supports RAR 2/3/4 formats only and doesn't support RAR5 archives. But latest versions of 7-Zip supports RAR5 archives.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why does drag-and-drop archive extraction from 7-Zip to Explorer use temp files?</h3>
+								<div class="user-faq__answer text">
+									<p>7-Zip doesn't know folder path of drop target. Only Windows Explorer knows exact drop target. And Windows Explorer needs files (drag source) as decompressed files on disk. So 7-Zip extracts files from archive to temp folder and then 7-Zip notifies Windows Explorer about paths of these temp files. Then Windows Explorer copies these files to drop target folder.</p>
+									<p>To avoid temp file usage, you can use Extract command of 7-Zip or drag-and-drop from 7-Zip to 7-Zip.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why doesn't the command line version add files without extensions to an archive?</h3>
+								<div class="user-faq__answer text">
+									<p>You're probably using a *.* wildcard. 7-Zip doesn't use the operating system's wildcard mask parser, and consequently treats *.* as any file that has an extension. To process all files you must use the * wildcard instead or omit the wildcard altogether.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why doesn't -r switch work as expected?</h3>
+								<div class="user-faq__answer text">
+									<p>In most cases you don't need -r switch. 7-Zip can compress subfolders even without -r switch.</p>
+									<span>Example 1:</span>
+									<pre>7z.exe a c:\a.7z "C:\Program Files"</pre>
+									<p>compresses "C:\Program Files" completely, including all subfolders.</p>
+									<span>Example 2:</span>
+									<pre>7z.exe a -r c:\a.7z "C:\Program Files"</pre>
+									<div>searches and compresses "Program Files" in all subfolders of C:\ (for example, in "C:\WINDOWS").</div>
+									<span>If you need to compress only files with some extension, you can use -r switch:</span>
+									<pre>7z a -r c:\a.zip c:\dir\*.txt </pre>
+									<p>compresses all *.txt files from folder c:\dir\ and all it's subfolders.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">How can I store full path of file in archive?</h3>
+								<div class="user-faq__answer text">
+									<p>7-Zip stores only relative paths of files (without drive letter prefix). You can change current folder to folder that is common for all files that you want to compress and then you can use relative paths:</p>
+									<pre>cd /D C:\dir1\</pre>
+									<pre>7z.exe a c:\a.7z file1.txt dir2\file2.txt</pre>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">Why can't 7-Zip use big dictionary in 32-bit Windows?</h3>
+								<div class="user-faq__answer text">
+									<p>32-bit Windows allocates only 2 GB of virtual space per one application. Also that block of 2 GB can be fragmented (for example, by some DLL file), so 7-Zip can't allocate one big contiguous block of virtual space. There are no such limitations in 64-bit Windows. So you can use any dictionary in Windows x64, if you have required amount of physical RAM.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">How can I install 7-Zip in silent mode?</h3>
+								<div class="user-faq__answer text">
+									<p>For exe installer: Use the "/S" parameter to do a silent installation and the /D="C:\Program Files\7-Zip" parameter to specify the "output directory". These options are case-sensitive.</p>
+									<p>For msi installer: Use the /q INSTALLDIR="C:\Program Files\7-Zip" parameters.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="user-faq__block">
+							<div data-showmore-content class="user-faq__content">
+								<h3 class="user-faq__question">How can I recover corrupted 7z archive?</h3>
+								<div class="user-faq__answer text">
+									<p>There are some possible cases when archive is corrupted:</p>
+									<ul class="user-faq__list list">
+										<li class="user-faq__item item">You can open archive and you can see the list of files, but when you press Extract or Test command, there are some errors: Data Error or CRC Error.</li>
+										<li class="user-faq__item item">When you open archive, you get message "Can not open file 'a.7z' as archive"</li>
+									</ul>
+									<p>It's possible to recover some data. Read about recovering procedure:</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+					</div>
+
+					<div class="faq__developer developer-faq">
+						<h2 class="developer-faq__title">Developer FAQ</h2>
+						<div data-showmore class="developer-faq__block">
+							<div data-showmore-content class="developer-faq__content">
+								<h3 class="developer-faq__question">Why are there linking errors when I compile 7-Zip or LZMA SDK with Visual C++ 6.0?</h3>
+								<div class="developer-faq__answer text">
+									<p>To compile sources you will need Visual C++ 6.0 or a later version. Some files also require a new Platform SDK from microsoft.com:</p>
+									<p>If you are using MSVC, specify the SDK directories at the top of the "Include files" and "Library files" directory lists. These can be found under "Tools / Options / Directories".</p>
+									<p>The latest Platform SDK is not compatible with MSVC6. So you must use Windows Server 2003 PSDK (February 2003) with MSVC6.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="developer-faq__block">
+							<div data-showmore-content class="developer-faq__content">
+								<h3 class="developer-faq__question">Can I use the EXE or DLL files from 7-Zip in a Commercial Application?</h3>
+								<div class="developer-faq__answer text">
+									<p>Yes, but you are required to specify in your documentation (1) that you used parts of the 7-Zip program, (2) that 7-Zip is licensed under the GNU LGPL license and (3) you must give a link to www.7-zip.org, where the source code can be found.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="developer-faq__block">
+							<div data-showmore-content class="developer-faq__content">
+								<h3 class="developer-faq__question">How can I add support for 7z archives to my application?</h3>
+								<div class="developer-faq__answer text">
+									<p>One way is to use the 7z.dll or 7za.dll (available from sf.net for download). The 7za.dll works via COM interfaces. It, however, doesn't use standard COM interfaces for creating objects. You can find a small example in "CPP\7zip\UI\Client7z" folder in the source code. A full example is 7-Zip itself, since 7-Zip works via this dll also. There are other applications that use 7za.dll such as WinRAR, PowerArchiver and others.</p>
+									<p>The other way is to call the command line version: 7za.exe.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+						<div data-showmore class="developer-faq__block">
+							<div data-showmore-content class="developer-faq__content">
+								<h3 class="developer-faq__question">Can I use the source code of 7-Zip in a commercial application?</h3>
+								<div class="developer-faq__answer text">
+									<p>Since 7-Zip is licensed under the GNU LGPL you must follow the rules of that license. In brief, it means that any LGPL'ed code must remain licensed under the LGPL. For instance, you can change the code from 7-Zip or write a wrapper for some code from 7-Zip and compile it into a DLL; but, the source code of that DLL (including your modifications / additions / wrapper) must be licensed under the LGPL or GPL. Any other code in your application can be licensed as you wish. This scheme allows users and developers to change LGPL'ed code and recompile that DLL. That is the idea of free software. Read more here: <a href="#" class="link">https://www.gnu.org/</a>. You can also read about the <a href="#" class="link">LZMA SDK</a>, which is available under a more liberal license.</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+						</div>
+					</div>
+				</div>
+			</article>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -66,7 +265,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240414230519"></script>
+	<script src="js/app.min.js?_v=20240415194039"></script>
 </body>
 
 </html>

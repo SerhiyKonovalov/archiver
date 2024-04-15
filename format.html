@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240414230519">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240415194039">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,141 @@
 			</div>
 		</header>
 		<main class="page">
-
+			<article class="format">
+				<div class="format__container">
+					<div class="format__title-wr title-wr">
+						<h2 class="format__title title">7z Format</h2>
+					</div>
+					<div class="format__text text">
+						<p>
+							7z is the new archive format, providing high compression ratio.
+						</p>
+					</div>
+					<span class="format__label label">The main features of 7z format:</span>
+					<ul class="format__list list">
+						<li class="format__item item">Open architecture</li>
+						<li class="format__item item">High compression ratio</li>
+						<li class="format__item item">Strong AES-256 encryption</li>
+						<li class="format__item item">Ability of using any compression, conversion or encryption method</li>
+						<li class="format__item item">Supporting files with sizes up to 16000000000 GB</li>
+						<li class="format__item item">Unicode file names</li>
+						<li class="format__item item">Solid compressing</li>
+						<li class="format__item item">Archive headers compressing</li>
+					</ul>
+					<div class="format__text text">
+						<p>
+							7z has open architecture, so it can support any new compression methods.
+						</p>
+					</div>
+					<div class="format__table table">
+						<span class="format__label label">Now the following compression methods are integrated to 7z:</span>
+						<table>
+							<tr>
+								<th>Method</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>LZMA</td>
+								<td>Improved and optimized version of LZ77 algorithm</td>
+							</tr>
+							<tr>
+								<td>LZMA2</td>
+								<td>Improved version of LZMA</td>
+							</tr>
+							<tr>
+								<td>PPMD</td>
+								<td>Dmitry Shkarin's PPMdH with small changes</td>
+							</tr>
+							<tr>
+								<td>BZip2</td>
+								<td>Standard BWT algorithm</td>
+							</tr>
+							<tr>
+								<td>Copy</td>
+								<td>No compression method</td>
+							</tr>
+						</table>
+					</div>
+					<div class="format__text text">
+						<p>
+							7z also supports filters that improve compression ratio of main compression method.
+						</p>
+					</div>
+					<div class="format__table table">
+						<span class="format__label label">Now the following filters are integrated to 7z:</span>
+						<table>
+							<tr>
+								<td>BCJ</td>
+								<td>Converter for x86 executables</td>
+							</tr>
+							<tr>
+								<td>BCJ2</td>
+								<td>Converter for x86 executables</td>
+							</tr>
+							<tr>
+								<td>ARM64</td>
+								<td>Converter for ARM64 executables</td>
+							</tr>
+							<tr>
+								<td>ARMT</td>
+								<td>Converter for 32-bit ARM-Thumb executables</td>
+							</tr>
+							<tr>
+								<td>ARM</td>
+								<td>Converter for 32-bit ARM32 executables</td>
+							</tr>
+							<tr>
+								<td>PPC</td>
+								<td>Converter for PowerPC executables</td>
+							</tr>
+							<tr>
+								<td>SPARC</td>
+								<td>Converter for SPARC executables</td>
+							</tr>
+							<tr>
+								<td>IA64</td>
+								<td>Converter for IA-64 (Itanium) executables</td>
+							</tr>
+							<tr>
+								<td>Delta</td>
+								<td>Converter for WAV files</td>
+							</tr>
+							<tr>
+								<td>Swap2/Swap4</td>
+								<td>Converters for changing the order of bytes</td>
+							</tr>
+						</table>
+					</div>
+					<div class="format__text text">
+						<p>
+							<b>LZMA</b> is default and general compression method of <b>7z</b> format
+						</p>
+					</div>
+					<span class="format__label label">The main features of LZMA method:</span>
+					<ul class="format__list list">
+						<li class="format__item item">High compression ratio</li>
+						<li class="format__item item">Variable dictionary size (up to 4 GB)</li>
+						<li class="format__item item">Compressing speed: about 2-8 MB/s on 4 GHz CPU (2 cpu threads version).</li>
+						<li class="format__item item">Decompressing speed: about 30-100 MB/s on 4 GHz CPU (1 cpu thread).</li>
+						<li class="format__item item">Small memory requirements for decompressing (depend from dictionary size)</li>
+						<li class="format__item item">Small code size for decompressing: about 5 KB</li>
+					</ul>
+					<div class="format__text text">
+						<p>
+							7-Zip also supports encryption with AES-256 algorithm. This algorithm uses cipher key with length of 256 bits. To create that key 7-Zip uses derivation function based on SHA-256 hash algorithm. A key derivation function produces a derived key from text password defined by user. For increasing the cost of exhaustive search for passwords 7-Zip uses big number of iterations to produce cipher key from text password.
+						</p>
+						<p>
+							7z code is a part of 7-Zip program distributed under the GNU LGPL. You can download 7-Zip sources and binaries from Download Page.
+						</p>
+						<p>
+							Major part of 7z code is included to LZMA SDK.
+						</p>
+						<p>
+							Applications that support 7z archives: WinRAR, PowerArchiver, TUGZip, IZArc.
+						</p>
+					</div>
+				</div>
+			</article>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -66,7 +200,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240414230519"></script>
+	<script src="js/app.min.js?_v=20240415194039"></script>
 </body>
 
 </html>

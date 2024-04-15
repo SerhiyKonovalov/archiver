@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240414230519">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240415194039">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,126 @@
 			</div>
 		</header>
 		<main class="page">
+			<article class="sdk">
+				<div class="sdk__container">
+					<div class="sdk__title-wr title-wr">
+						<h1 class="sdk__title title">LZMA SDK (Software Development Kit)</h1>
+					</div>
+					<div class="sdk__text text">
+						<p>
+							The <b>LZMA</b> SDK provides the documentation, samples, header files, libraries, and tools you
+							need to develop applications that use <b>LZMA</b> compression.
+						</p>
+					</div>
+					<div class="sdk__table table">
+						<table>
+							<tr>
+								<th>Link</th>
+								<th>Size</th>
+								<th>Date</th>
+								<th>Version</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td><a href="#" class="link">Download</a></td>
+								<td>1&nbsp;MB</td>
+								<td>2023&#8209;06&#8209;20</td>
+								<td>23.01</td>
+								<td rowspan="2">LZMA SDK
+									C, C++, C#, Java
+									x86/x64 binaries for Windows</td>
+							</tr>
+							<tr>
+								<td><a href="#" class="link">Download</a></td>
+								<td>1&nbsp;MB</td>
+								<td>2022-07-15</td>
+								<td>22.01</td>
+								<!-- <td></td> -->
+							</tr>
+							<tr>
+								<td><a href="#" class="link">Download</a></td>
+								<td>12&nbsp;KB</td>
+								<td>2015-06-14</td>
+								<td></td>
+								<td>LZMA Specification (Draft)</td>
+							</tr>
+						</table>
+					</div>
 
+					<div class="sdk__new">
+						<span class="sdk__label label">What's new:</span>
+						<ul class="sdk__list list">
+							<li class="sdk__item item"><b>23.01:</b> New filter for ARM64 executables. BCJ2 filter was improved for better compression ratio. Some bugs were fixed.</li>
+							<li class="sdk__item item"><b>21.07:</b> Some minor changes and fixes.</li>
+							<li class="sdk__item item"><b>21.06:</b> The bug in LZMA encoding function was fixed.</li>
+							<li class="sdk__item item"><b>21.03 beta:</b> LZMA dicrionary up to 4 GB. Speed optimizations.</li>
+							<li class="sdk__item item"><b>21.02 alpha:</b> macOS and Linux support. Speed optimizations.</li>
+							<li class="sdk__item item"><b>19.00:</b> Encryption strength for 7z archives was increased.</li>
+							<li class="sdk__item item"><b>18.06:</b> Some speed optimiztions in LZMA/LZMA2 code.</li>
+							<li class="sdk__item item"><b>18.05:</b> Some speed optimiztions in LZMA/LZMA2 code.</li>
+							<li class="sdk__item item"><b>18.01:</b> Some changes in LZMA2/xz multithreading code for compressing. Some bugs were fixed.</li>
+							<li class="sdk__item item"><b>9.35:</b> AES code and SFXs modules were included to SDK.</li>
+							<li class="sdk__item item"><b>4.62:</b> LZMA SDK is placed in the public domain.</li>
+						</ul>
+					</div>
+					<div class="sdk__text text">
+						<p>
+							<b>LZMA / LZMA2</b> are default and general compression methods of <a href="#" class="link">7z format</a> in the <b>7-Zip</b> program.
+							<b>LZMA</b> provides a high compression ratio and fast decompression, so it is very suitable for
+							embedded applications. For example, it can be used for ROM (firmware) compressing.
+						</p>
+					</div>
+
+					<div class="sdk__includes">
+						<span class="sdk__label label">LZMA SDK includes:</span>
+						<ul class="sdk__list list">
+							<li class="sdk__item item"><b>C++</b> source code of <b>LZMA</b> Encoder and Decoder</li>
+							<li class="sdk__item item"><b>C++</b> source code for <b>.7z</b> compression and decompression (reduced version)</li>
+							<li class="sdk__item item"><b>ANSI-C</b> compatible source code for <b>LZMA / LZMA2 / XZ</b> compression and decompression</li>
+							<li class="sdk__item item"><b>ANSI-C</b> compatible source code for 7z decompression with example</li>
+							<li class="sdk__item item"><b>C#</b> source code for <b>LZMA</b> compression and decompression</li>
+							<li class="sdk__item item"><b>Java</b> source code for <b>LZMA</b> compression and decompression</li>
+							<li class="sdk__item item"><b>lzma.exe</b> for .<b>lzma</b> compression and decompression</li>
+							<li class="sdk__item item"><b>7zr.exe</b> to work with 7z archives (reduced version of 7z.exe from 7-Zip)</li>
+							<li class="sdk__item item"><b>SFX</b> modules to create self-extracting packages and installers</li>
+						</ul>
+					</div>
+
+					<div class="sdk__features">
+						<span class="sdk__label label"><b>LZMA</b> features:</span>
+						<ul class="sdk__list list">
+							<li class="sdk__item item">Compression speed: 2-8 MB/s on 4 GHz CPU using two cpu threads.</li>
+							<li class="sdk__item item">
+								<span>Decompression speed on single cpu thread:</span>
+								<ul class="sdk__sublist sublist">
+									<li class="sdk__subitem subitem">Packing / unpacking: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM</li>
+									<li class="sdk__subitem subitem">Unpacking only: APFS, AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2, RAR, RPM, SquashFS, UDF, UEFI, VDI, VHD, VHDX, VMDK, XAR and Z.</li>
+								</ul>
+							</li>
+							<li class="sdk__item item">Small memory requirements for decompression: 8-32 KB + DictionarySize</li>
+							<li class="sdk__item item">Small code size for decompression: 2-8 KB (depending on speed optimizations)</li>
+						</ul>
+					</div>
+					<div class="sdk__text text">
+						<p>
+							The <b>LZMA</b> decoder uses only CPU integer instructions and can be implemented for any modern 32-bit CPU.
+						</p>
+					</div>
+				</div>
+			</article>
+			<section class="license">
+				<div class="license__container">
+					<div class="license__title-wr title-wr">
+						<h2 class="license__title title">License</h2>
+					</div>
+					<div class="license__text text">
+						<span class="license__label label"><b>LZMA SDK</b> is placed in the <b>public domain</b>.</span>
+						<p>
+							Anyone is free to copy, modify, publish, use, compile, sell, or distribute the original LZMA SDK code, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -66,7 +185,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240414230519"></script>
+	<script src="js/app.min.js?_v=20240415194039"></script>
 </body>
 
 </html>
