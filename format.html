@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>7z Format</title>
+	<title>Format</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<style>
@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240416142040">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240420204011">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 		<header data-scroll data-scroll-show="500" class="header">
 			<div class="header__container">
 				<a href="home.html" class="header__logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+					<img src="img/logo.svg" alt="Logo">
 				</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -31,10 +31,7 @@
 								<a href="home.html" class="menu__link">Home</a>
 							</li>
 							<li class="menu__item">
-								<a href="format.html" class="menu__link">7z Format</a>
-							</li>
-							<li class="menu__item">
-								<a href="sdk.html" class="menu__link">LZMA SDK</a>
+								<a href="format.html" class="menu__link">Format</a>
 							</li>
 							<li class="menu__item">
 								<a href="download.html" class="menu__link">Download</a>
@@ -66,146 +63,52 @@
 			<article class="format">
 				<div class="format__container">
 					<div class="format__title-wr title-wr">
-						<h2 class="format__title title">7z Format</h2>
+						<h2 class="format__title title">1-Zip Format</h2>
 					</div>
 					<div class="format__text text">
 						<p>
-							7z is the new archive format, providing high compression ratio.
+							1-Zip is the next-generation archive format, boasting exceptional compression capabilities and versatility.
 						</p>
 					</div>
-					<span class="format__label label">The main features of 7z format:</span>
+					<span class="format__label label">Key features of 1-Zip format:</span>
 					<ul class="format__list list">
-						<li class="format__item item">Open architecture</li>
-						<li class="format__item item">High compression ratio</li>
-						<li class="format__item item">Strong AES-256 encryption</li>
-						<li class="format__item item">Ability of using any compression, conversion or encryption method</li>
-						<li class="format__item item">Supporting files with sizes up to 16000000000 GB</li>
-						<li class="format__item item">Unicode file names</li>
-						<li class="format__item item">Solid compressing</li>
-						<li class="format__item item">Archive headers compressing</li>
+						<li class="format__item item">Innovative architecture</li>
+						<li class="format__item item">Outstanding compression efficiency</li>
+						<li class="format__item item">Robust AES-256 encryption</li>
+						<li class="format__item item">Flexibility to employ various compression, conversion, and encryption techniques</li>
+						<li class="format__item item">Support for files up to an astounding 16 exabytes (16,000,000,000 GB) in size</li>
+						<li class="format__item item">Seamless handling of Unicode file names</li>
+						<li class="format__item item">Solid compression for enhanced efficiency</li>
+						<li class="format__item item">Archive header compression to optimize space utilization</li>
 					</ul>
 					<div class="format__text text">
 						<p>
-							7z has open architecture, so it can support any new compression methods.
+							1-Zip's open architecture ensures adaptability, enabling it to integrate new compression methods seamlessly. With its cutting-edge features, 1-Zip is the ultimate choice for efficient and secure file archiving.
 						</p>
 					</div>
-					<div class="format__table table">
-						<span class="format__label label">Now the following compression methods are integrated to 7z:</span>
-						<table>
-							<tr>
-								<th>Method</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td>LZMA</td>
-								<td>Improved and optimized version of LZ77 algorithm</td>
-							</tr>
-							<tr>
-								<td>LZMA2</td>
-								<td>Improved version of LZMA</td>
-							</tr>
-							<tr>
-								<td>PPMD</td>
-								<td>Dmitry Shkarin's PPMdH with small changes</td>
-							</tr>
-							<tr>
-								<td>BZip2</td>
-								<td>Standard BWT algorithm</td>
-							</tr>
-							<tr>
-								<td>Copy</td>
-								<td>No compression method</td>
-							</tr>
-						</table>
-					</div>
-					<div class="format__text text">
-						<p>
-							7z also supports filters that improve compression ratio of main compression method.
-						</p>
-					</div>
-					<div class="format__table table">
-						<span class="format__label label">Now the following filters are integrated to 7z:</span>
-						<table>
-							<tr>
-								<td>BCJ</td>
-								<td>Converter for x86 executables</td>
-							</tr>
-							<tr>
-								<td>BCJ2</td>
-								<td>Converter for x86 executables</td>
-							</tr>
-							<tr>
-								<td>ARM64</td>
-								<td>Converter for ARM64 executables</td>
-							</tr>
-							<tr>
-								<td>ARMT</td>
-								<td>Converter for 32-bit ARM-Thumb executables</td>
-							</tr>
-							<tr>
-								<td>ARM</td>
-								<td>Converter for 32-bit ARM32 executables</td>
-							</tr>
-							<tr>
-								<td>PPC</td>
-								<td>Converter for PowerPC executables</td>
-							</tr>
-							<tr>
-								<td>SPARC</td>
-								<td>Converter for SPARC executables</td>
-							</tr>
-							<tr>
-								<td>IA64</td>
-								<td>Converter for IA-64 (Itanium) executables</td>
-							</tr>
-							<tr>
-								<td>Delta</td>
-								<td>Converter for WAV files</td>
-							</tr>
-							<tr>
-								<td>Swap2/Swap4</td>
-								<td>Converters for changing the order of bytes</td>
-							</tr>
-						</table>
-					</div>
-					<div class="format__text text">
-						<p>
-							<b>LZMA</b> is default and general compression method of <b>7z</b> format
-						</p>
-					</div>
-					<span class="format__label label">The main features of LZMA method:</span>
-					<ul class="format__list list">
-						<li class="format__item item">High compression ratio</li>
-						<li class="format__item item">Variable dictionary size (up to 4 GB)</li>
-						<li class="format__item item">Compressing speed: about 2-8 MB/s on 4 GHz CPU (2 cpu threads version).</li>
-						<li class="format__item item">Decompressing speed: about 30-100 MB/s on 4 GHz CPU (1 cpu thread).</li>
-						<li class="format__item item">Small memory requirements for decompressing (depend from dictionary size)</li>
-						<li class="format__item item">Small code size for decompressing: about 5 KB</li>
-					</ul>
-					<div class="format__text text">
-						<p>
-							7-Zip also supports encryption with AES-256 algorithm. This algorithm uses cipher key with length of 256 bits. To create that key 7-Zip uses derivation function based on SHA-256 hash algorithm. A key derivation function produces a derived key from text password defined by user. For increasing the cost of exhaustive search for passwords 7-Zip uses big number of iterations to produce cipher key from text password.
-						</p>
-						<p>
-							7z code is a part of 7-Zip program distributed under the GNU LGPL. You can download 7-Zip sources and binaries from Download Page.
-						</p>
-						<p>
-							Major part of 7z code is included to LZMA SDK.
-						</p>
-						<p>
-							Applications that support 7z archives: WinRAR, PowerArchiver, TUGZip, IZArc.
-						</p>
-					</div>
-				</div>
 			</article>
+			<section class="main-features">
+				<div class="main-features__container">
+					<div class="main-features__title-wr title-wr">
+						<h2 class="main-features__title title">Main Features</h2>
+					</div>
+					<ul class="main-features__list list">
+						<li class="main-features__item item">Support for various formats: 1-Zip supports a wide range of archive formats, including ZIP, RAR, 1z, TAR, GZIP, and many others. This allows users to compress and extract files in the way that is most convenient for them.</li>
+						<li class="main-features__item item">Efficient file compression: Our archiver utilizes advanced compression algorithms, ensuring optimal file compression without sacrificing quality. This helps to save disk space and speed up file transfer over the network.</li>
+						<li class="main-features__item item">Integration with the Windows operating system: 1-Zip seamlessly integrates with the Windows operating system, allowing users to compress and extract files directly from the Windows File Explorer. Simply right-click on files or folders to access 1-Zip's features.</li>
+						<li class="main-features__item item">Intuitive user interface: 1-Zip offers a simple and user-friendly interface, making working with archives easy and enjoyable. Regardless of your level of expertise in computers, you will quickly understand how to use all of 1-Zip's features.</li>
+						<li class="main-features__item item">Data security: 1-Zip ensures the security of your information by supporting passwords for encrypted archives. You can easily protect your files with a password, ensuring their confidentiality and security.</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__copy">© 2024 all rights reserved — 7-zip.org.ua.</div>
+				<div class="footer__copy">© 2024 all rights reserved — 1-zip</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240416142040"></script>
+	<script src="js/app.min.js?_v=20240420204011"></script>
 </body>
 
 </html>

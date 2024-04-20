@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240416142040">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240420204011">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 		<header data-scroll data-scroll-show="500" class="header">
 			<div class="header__container">
 				<a href="home.html" class="header__logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+					<img src="img/logo.svg" alt="Logo">
 				</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -31,10 +31,7 @@
 								<a href="home.html" class="menu__link">Home</a>
 							</li>
 							<li class="menu__item">
-								<a href="format.html" class="menu__link">7z Format</a>
-							</li>
-							<li class="menu__item">
-								<a href="sdk.html" class="menu__link">LZMA SDK</a>
+								<a href="format.html" class="menu__link">Format</a>
 							</li>
 							<li class="menu__item">
 								<a href="download.html" class="menu__link">Download</a>
@@ -68,41 +65,30 @@
 					<div class="support__title-wr title-wr">
 						<h1 class="support__title title">Technical Support</h1>
 					</div>
-					<span class="support__label label">Before requesting customer support for 7-Zip, please</span>
+					<span class="support__label label">Before contacting customer support for 1-Zip, please ensure that you have done the following:</span>
+					<ol class="support__list support__list--num list">
+						<li class="support__item support__item--num item">Check that you are using the latest version of 1-Zip.</li>
+						<li class="support__item support__item--num item">If you are reporting a problem, also check the latest development version of 1-Zip. It may be a beta or alpha version. Your issue might already be resolved in a newer version.</li>
+						<li class="support__item support__item--num item">If you are using 64-bit Windows (x64), make sure you are using 1-Zip x64.</li>
+						<li class="support__item support__item--num item">Familiarize yourself with the 1-Zip help system.</li>
+						<li class="support__item support__item--num item"><a href="faq.html" target="_blank" class="link">Read the FAQ</a>.</li>
+						<li class="support__item support__item--num item">Search the 1-Zip forum for similar inquiries.</li>
+					</ol>
+					<span class="support__label label">When posting a message to the forum about a problem with 1-Zip, please provide the following information about your system:</span>
 					<ul class="support__list list">
-						<li class="support__item item">Check that you use latest version of 7-Zip.</li>
-						<li class="support__item item">If you want to report about some problem, check also latest development version of 7-Zip. It can be beta or alpha version. Maybe your problem is already fixed in some new version.</li>
-						<li class="support__item item">If you have 64-bit Windows x64, check that you use 7-Zip x64.</li>
-						<li class="support__item item">Check out the 7-Zip help system also.</li>
-						<li class="support__item item"><a href="faq.html" class="link">Read FAQ</a>.</li>
-						<li class="support__item item">Search on 7-Zip forum for similar requests.</li>
+						<li class="support__item item">1-Zip version and architecture (32-bit / 64-bit)</li>
+						<li class="support__item item">Windows version and architecture (32-bit / 64-bit)</li>
 					</ul>
-					<div class="support__text text">
-						<p>
-							Please use 7-Zip forum for all common questions; you can get answers on the forum from 7-Zip developers and from other 7-Zip users.
-						</p>
-						<p><a href="#" class="link">7-Zip's Forum at SourceForge</a></p>
-						<span class="support__label label">If you post a message to forum about some problem with 7-Zip, please provide the following information about your system:</span>
-						<ul class="support__list list">
-							<li class="support__item item">7-Zip version and type (32-bit / 64-bit)</li>
-							<li class="support__item item">Windows version and type (32-bit / 64-bit)</li>
-						</ul>
-						<p>If you know about some bug in 7-Zip code, you can create new ticket in BUGs section:</p>
-						<p><a href="#" class="link">7-Zip's BUGs tickets at SourceForge</a></p>
-						<p>Please mark the ticket as "Mark as Private", if you want to report about some possible vulnerability in 7-Zip.</p>
-						<p>If you want to send message to developer of 7-Zip, you can do it via SourceForge "Send Message" service, or create support ticket with "Mark as Private" flag:</p>
-						<p><a href="#" class="link">7-Zip's Support Requests tickets at SourceForge</a></p>
-					</div>
 				</div>
 			</article>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__copy">© 2024 all rights reserved — 7-zip.org.ua.</div>
+				<div class="footer__copy">© 2024 all rights reserved — 1-zip</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240416142040"></script>
+	<script src="js/app.min.js?_v=20240420204011"></script>
 </body>
 
 </html>
