@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240420210904">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240421195536">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,19 +28,19 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="home.html" class="menu__link">Home</a>
+								<a href="home.html" class="menu__link lng-menu__link-home">Home</a>
 							</li>
 							<li class="menu__item">
-								<a href="format.html" class="menu__link">Format</a>
+								<a href="format.html" class="menu__link lng-menu__link-format">Format</a>
 							</li>
 							<li class="menu__item">
-								<a href="download.html" class="menu__link">Download</a>
+								<a href="download.html" class="menu__link lng-menu__link-download">Download</a>
 							</li>
 							<li class="menu__item">
-								<a href="faq.html" class="menu__link">FAQ</a>
+								<a href="faq.html" class="menu__link lng-menu__link-faq">FAQ</a>
 							</li>
 							<li class="menu__item">
-								<a href="support.html" class="menu__link">Support</a>
+								<a href="support.html" class="menu__link lng-menu__link-support">Support</a>
 							</li>
 						</ul>
 					</nav>
@@ -48,14 +48,10 @@
 				<div class="header__languages languages">
 					<select name="form[]" class="languages__select" data-speed="300" data-class-modif="form">
 						<option value="en" class="languages__option" selected>English</option>
-						<option value="sp" class="languages__option">Spanish</option>
-						<option value="ru" class="languages__option">Russian</option>
+						<option value="en" class="languages__option">English</option>
+						<option value="sp" class="languages__option">Español</option>
+						<option value="ru" class="languages__option">Русский</option>
 					</select>
-					<!-- <select class="languages__select">
-				<option value="en" class="languages__option" selected>English</option>
-				<option value="sp" class="languages__option">Spanish</option>
-				<option value="ru" class="languages__option">Russian</option>
-			</select> -->
 				</div>
 			</div>
 		</header>
@@ -63,39 +59,39 @@
 			<article class="faq">
 				<div class="faq__container">
 					<div class="faq__title-wr title-wr">
-						<h1 class="faq__title title">Frequently Asked Questions (FAQ)</h1>
+						<h1 class="faq__title title lng-faq__title">Frequently Asked Questions (FAQ)</h1>
 						<nav class="faq__navigation">
-							<a href="#" data-goto-header data-goto=".user-faq" class="faq__link">User FAQ &crarr;</a>
-							<a href="#" data-goto-header data-goto=".developer-faq" class="faq__link">Developer FAQ &crarr;</a>
+							<a href="#" data-goto-header data-goto=".user-faq" class="faq__link lng-faq__link-user">User FAQ &crarr;</a>
+							<a href="#" data-goto-header data-goto=".developer-faq" class="faq__link lng-faq__link-developer">Developer FAQ &crarr;</a>
 						</nav>
 					</div>
 
 					<div class="faq__user user-faq">
 						<div class="user-faq__title-wr">
-							<h2 class="user-faq__title title">User FAQ</h2>
+							<h2 class="user-faq__title title lng-user-faq__title">User FAQ</h2>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Can I use 1-Zip in a commercial organization?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-1">Can I use 1-Zip in a commercial organization?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-1">
 									<p>Yes, 1-Zip is free software. You can use it on any computer. You don't need to register or pay for 1-Zip.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">How can I set file associations to 1-Zip in Windows 7 and Windows Vista?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-2">How can I set file associations to 1-Zip in Windows 7 and Windows Vista?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-2">
 									<p>You must run 1-Zip File Manager in administrator mode. Right-click the icon of 1-Zip File Manager, and then click Run as administrator. Then you can change file associations and some other options.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why 1z archives created by a new version of 1-Zip can be larger than archives created by an old version of 1-Zip?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-3">Why 1z archives created by a new version of 1-Zip can be larger than archives created by an old version of 1-Zip?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-3">
 									<p>Old versions of 1-Zip (before version 15.06) used file sorting "by type" ("by extension").</p>
 									<p style="font-weight: 600;">The new version of 1-Zip supports two sorting orders:</p>
 									<ul class="user-faq__list list">
@@ -112,81 +108,81 @@
 									<p>If you think that unusual file order is not problem for you, and if better compression ratio with small dictionary is more important for you, use 'qs' mode.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why can't 1-Zip open some ZIP archives?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-4">Why can't 1-Zip open some ZIP archives?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-4">
 									<p>In 99% of these cases, it means that the archive contains incorrect headers. Other ZIP programs can open some archives with incorrect headers since these programs just ignore errors.</p>
 									<p>If you have such an archive, please don't contact the 1-Zip developers about it. Instead, try to find the program that was used to create the archive and inform the developers of that program that their software is not ZIP-compatible.</p>
 									<p>There are also some ZIP archives that were encoded with methods unsupported by 1-Zip, for example, WAVPack (WinZip).</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why can't 7-Zip open some RAR archives?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-5">Why can't 1-Zip open some RAR archives?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-5">
 									<p>1-Zip 9.20 supports RAR 2/3/4 formats only and doesn't support RAR5 archives. However, the latest versions of 1-Zip support RAR5 archives.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why does drag-and-drop archive extraction from 1-Zip to Explorer use temp files?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-6">Why does drag-and-drop archive extraction from 1-Zip to Explorer use temp files?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-6">
 									<p>1-Zip doesn't know the folder path of the drop target. Only Windows Explorer knows the exact drop target. And Windows Explorer needs files (drag source) as decompressed files on the disk. So 1-Zip extracts files from the archive to a temp folder, and then 1-Zip notifies Windows Explorer about the paths of these temp files. Then Windows Explorer copies these files to the drop target folder.</p>
 									<p>To avoid temp file usage, you can use the Extract command of 1-Zip or drag-and-drop from 1-Zip to another instance of 1-Zip.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why doesn't the command-line version add files without extensions to an archive?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-7">Why doesn't the command-line version add files without extensions to an archive?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-7">
 									<p>You're probably using a *.* wildcard. 1-Zip doesn't use the operating system's wildcard mask parser and consequently treats *.* as any file that has an extension. To process all files, you must use the * wildcard instead or omit the wildcard altogether.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="user-faq__block">
 							<div data-showmore-content class="user-faq__content">
-								<h3 class="user-faq__question">Why can't 1-Zip use a big dictionary in 32-bit Windows?</h3>
-								<div class="user-faq__answer text">
+								<h3 class="user-faq__question lng-user-faq__question-8">Why can't 1-Zip use a big dictionary in 32-bit Windows?</h3>
+								<div class="user-faq__answer text lng-user-faq__answer-8">
 									<p>32-bit Windows allocates only 2 GB of virtual space per application. Additionally, this block of 2 GB can be fragmented (for example, by some DLL files), making it impossible for 1-Zip to allocate one large contiguous block of virtual space. There are no such limitations in 64-bit Windows. Therefore, you can use any dictionary size in Windows x64, provided you have the required amount of physical RAM.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="user-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="user-faq__more lng-user-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 					</div>
 
 					<div class="faq__developer developer-faq">
 						<div class="developer-faq__title-wr">
-							<h2 class="developer-faq__title title">Developer FAQ</h2>
+							<h2 class="developer-faq__title title lng-developer-faq__title">Developer FAQ</h2>
 						</div>
 						<div data-showmore class="developer-faq__block">
 							<div data-showmore-content class="developer-faq__content">
-								<h3 class="developer-faq__question">Why are there linking errors when I compile 1-Zip or LZMA SDK with Visual C++ 6.0?</h3>
-								<div class="developer-faq__answer text">
+								<h3 class="developer-faq__question lng-developer-faq__question-1">Why are there linking errors when I compile 1-Zip or LZMA SDK with Visual C++ 6.0?</h3>
+								<div class="developer-faq__answer text lng-developer-faq__answer-1">
 									<p>To compile sources, you will need Visual C++ 6.0 or a later version. Some files also require the latest Platform SDK from Microsoft:</p>
 									<p>If you are using MSVC, specify the SDK directories at the top of the "Include files" and "Library files" directory lists. These can be found under "Tools / Options / Directories".</p>
 									<p>Please note that the latest Platform SDK is not compatible with MSVC6. Therefore, you must use the Windows Server 2003 Platform SDK (February 2003) with MSVC6.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="developer-faq__more lng-developer-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 						<div data-showmore class="developer-faq__block">
 							<div data-showmore-content class="developer-faq__content">
-								<h3 class="developer-faq__question">Can I use the source code of 1-Zip in a commercial application?</h3>
-								<div class="developer-faq__answer text">
+								<h3 class="developer-faq__question lng-developer-faq__question-2">Can I use the source code of 1-Zip in a commercial application?</h3>
+								<div class="developer-faq__answer text lng-developer-faq__answer-2">
 									<p>Since 1-Zip is licensed under the GNU LGPL, you must follow the rules of that license. In brief, it means that any LGPL'ed code must remain licensed under the LGPL. For instance, you can change the code from 1-Zip or write a wrapper for some code from 1-Zip and compile it into a DLL. However, the source code of that DLL (including your modifications/additions/wrapper) must be licensed under the LGPL or GPL. Any other code in your application can be licensed as you wish. This scheme allows users and developers to change LGPL'ed code and recompile that DLL. That is the idea of free software.</p>
 								</div>
 							</div>
-							<button hidden data-showmore-button type="button" class="developer-faq__more"><span>Show more</span><span>Hide</span></button>
+							<button hidden data-showmore-button type="button" class="developer-faq__more lng-developer-faq__more"><span>Show more</span><span>Hide</span></button>
 						</div>
 					</div>
 				</div>
@@ -194,11 +190,11 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__copy">© 2024 all rights reserved — 1-zip</div>
+				<div class="footer__copy lng-footer__copy">© 2024 all rights reserved — 1-zip</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240420210904"></script>
+	<script src="js/app.min.js?_v=20240421195536"></script>
 </body>
 
 </html>
