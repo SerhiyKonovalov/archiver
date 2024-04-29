@@ -4,20 +4,22 @@
 <head>
 	<title class="lng-title-home">1-Zip is a powerful archiver that supports many formats</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
 		body {
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240425230345">
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240426135019">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="alternate icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="canonical" href="https://1zip.org" />
+	<link rel="alternate" hreflang="en" href="https://1zip.org/home#en" />
+	<link rel="alternate" hreflang="es" href="https://1zip.org/home#es" />
+	<link rel="alternate" hreflang="ru" href="https://1zip.org/home#ru" />
 	<meta name="robots" content="follow, index, max-snippet:-1, max-image-preview:large" />
-	<link rel="canonical" href="https://1zip.org/home#en">
-	<link rel="alternate" hreflang="en" href="https://1zip.org/home#en">
-	<link rel="alternate" hreflang="es" href="https://1zip.org/home#sp">
-	<link rel="alternate" hreflang="ru" href="https://1zip.org/home#ru">
 	<meta name="description" data-lng="description-home" content="Official site of the powerful and free 1-Zip archiver: license, main features, format, downloads, frequently asked questions, technical support" />
 	<meta name="keywords" data-lng="keywords-home" content="1z, 1 zip, zip, archiver, 1z archiver, 1 zip archiver, 1z download, 1 zip download, 1z free, 1 zip free, win zip, win zip download, winzip, winzip download, zip win, zip win download, zip online, unzip, unzip online, freearc, compress, compression, win32, win64" />
 
@@ -25,7 +27,7 @@
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:locale:alternate" content="es_ES" />
 	<meta property="og:locale:alternate" content="ru_RU" />
-	<meta property="og:url" content="https://1zip.org/home#en" />
+	<meta property="og:url" content="https://1zip.org" />
 	<meta property="og:site_name" data-lng="site_name" content="Archiver «1-Zip»" />
 	<meta property="og:title" data-lng="title-home" content="1-Zip is a powerful archiver that supports many formats" />
 	<meta property="og:description" data-lng="description-home" content="Official site of the powerful and free 1-Zip archiver: license, main features, format, downloads, frequently asked questions, technical support" />
@@ -52,21 +54,26 @@
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="home" class="menu__link lng-menu__link-home">Home</a>
+						<ul class="menu__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+							<li class="menu__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="home" class="menu__link lng-menu__link-home" itemprop="item"><span itemprop="name">Home</span></a>
+								<meta itemprop="position" content="1" />
 							</li>
-							<li class="menu__item">
-								<a href="format" class="menu__link lng-menu__link-format">Format</a>
+							<li class="menu__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="format" class="menu__link lng-menu__link-format" itemprop="item"><span itemprop="name">Format</span></a>
+								<meta itemprop="position" content="2" />
 							</li>
-							<li class="menu__item">
-								<a href="download" class="menu__link lng-menu__link-download">Download</a>
+							<li class="menu__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="download" class="menu__link lng-menu__link-download" itemprop="item"><span itemprop="name">Download</span></a>
+								<meta itemprop="position" content="3" />
 							</li>
-							<li class="menu__item">
-								<a href="faq" class="menu__link lng-menu__link-faq">FAQ</a>
+							<li class="menu__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="faq" class="menu__link lng-menu__link-faq" itemprop="item"><span itemprop="name">FAQ</span></a>
+								<meta itemprop="position" content="4" />
 							</li>
-							<li class="menu__item">
-								<a href="support" class="menu__link lng-menu__link-support">Support</a>
+							<li class="menu__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="support" class="menu__link lng-menu__link-support" itemprop="item"><span itemprop="name">Support</span></a>
+								<meta itemprop="position" content="5" />
 							</li>
 						</ul>
 					</nav>
@@ -85,7 +92,7 @@
 			<section class="about">
 				<div class="about__container">
 					<div class="about__title-wr title-wr">
-						<h1 class="about__title title lng-about__title">Welcome to 1-Zip — your universal archiver for fast and efficient file compression and decompression!</h1>
+						<span class="about__title title lng-about__title">Welcome to <h1>1-Zip — your universal archiver</h1> for fast and efficient file compression and decompression!</span>
 					</div>
 					<div class="about__text text lng-about__text">
 						<p>
@@ -139,7 +146,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240425230345"></script>
+	<script src="js/app.min.js?_v=20240426135019"></script>
 </body>
 
 </html>
